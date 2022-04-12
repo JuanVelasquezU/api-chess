@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    background: #2b5876;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.seach{
+    max-width: 640px;
+    min-width: 350px;
+    min-height: 40px;
+    border: #a8abae solid;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: #a8abae;
+}
+
+.contenedor-jugador{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    background: #41295a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 60%;
+    height: 60vh;
+    border: solid rgb(29, 28, 28) 2px;
+    border-radius: 15px;
+}
+
+h2{
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.rankings{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ranking-puntaje{
+
+}
