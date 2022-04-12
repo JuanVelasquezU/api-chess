@@ -35,7 +35,20 @@ const userSearch = async(username) => {
     const dataGameRapid= data.perfs.rapid.rating;
     const dataGameClassic= data.perfs.classical.rating;
 
+   const render = () => {
+
+      
+
+   }
+
+
+
+
     document.getElementById('usernamehtml').innerHTML=idJugador;
+    document.getElementById('bullet').innerHTML=dataGameBullet;
+    document.getElementById('blitz').innerHTML=dataGameBlitz;
+    document.getElementById('rapid').innerHTML=dataGameRapid;
+    document.getElementById('classic').innerHTML=dataGameClassic;
 
     console.log(data)
 
