@@ -27,6 +27,11 @@ const userSearch = async(username) => {
 
     const data = await userData.json();
 
+    if (data.online == true) {
+       console.log("estoy en linea")
+       
+    }
+
     const idJugador= data.id;
     const online= data.online;
     const dataUrl = data.url;
@@ -34,14 +39,6 @@ const userSearch = async(username) => {
     const dataGameBlitz= data.perfs.blitz.rating;
     const dataGameRapid= data.perfs.rapid.rating;
     const dataGameClassic= data.perfs.classical.rating;
-
-   const render = () => {
-
-      
-
-   }
-
-
 
 
     document.getElementById('usernamehtml').innerHTML=idJugador;
@@ -52,17 +49,13 @@ const userSearch = async(username) => {
 
     console.log(data)
 
-    
-
-  
-
 
  } catch (error) {
      
  }
-
-
-
 }
 
-// userSearch()
+
+
+//    
+// asyncTv()
