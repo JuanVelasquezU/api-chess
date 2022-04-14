@@ -1,6 +1,6 @@
 const search = document.getElementById('seach');
 const form = document.getElementById('form');
-let jugador = "";
+const arroz = document.getElementById('usernamehtml')
 
 
 //Escuchar evento submit del form
@@ -14,23 +14,13 @@ form.addEventListener('submit', (e) => {
    
 })
 
-
-//obtener info de usuario en Lichess
-
-
-
-
 const userSearch = async(username) => {
 
  try {
    const userData= await fetch(`https://lichess.org/api/user/${username}`)
 
     const data = await userData.json();
-
-    if (data.online == true) {
-       console.log("estoy en linea")
-       
-    }
+   
 
     const idJugador= data.id;
     const online= data.online;
@@ -49,13 +39,30 @@ const userSearch = async(username) => {
 
     console.log(data)
 
+    if (data.online == true) {
+      
+      const enLinea = `
+      <div class="punto"></div> `
+  
+       
+        arroz.innerHTML = enLinea;
+       
+     
+     console.log("estoy en linea")
+
+   }else{
+      const enLinea2 = `
+    <div class="punto2"></div> `
+
+     
+      arroz.innerHTML = enLinea2;
+     
+   }
 
  } catch (error) {
      
  }
 }
-
-
 
 //    
 // asyncTv()
